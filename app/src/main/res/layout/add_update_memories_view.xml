@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px" />
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:id="@+id/title"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="@string/add_update_view_title"
+            android:textColor="@color/colorblack"
+            android:background="@android:color/transparent"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:maxLength="25"
+            >
+        </EditText>
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/camera"
+                    />
+                <LinearLayout
+                    android:orientation="horizontal" android:layout_width="match_parent"
+                    android:background="@drawable/edge_memories"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/add_update_view_description"
+                    android:background="@android:color/transparent"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:maxLength="250"
+                    >
+                </EditText>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/add_update_view_date"
+                    android:id="@+id/date"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/selectdate"
+                android:background="@drawable/calendar_blue"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" android:gravity="center">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edge_button"
+                android:textSize="15sp">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
